@@ -1,0 +1,271 @@
+body{
+  font-family: 'Sansita Swashed', cursive;
+}
+/* sidebar */
+#burger{
+  font-size: 40px;
+  cursor: pointer;
+  align-self: center;
+  color: white;
+  margin: 0 20px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* background: linear-gradient(180deg, rgba(15,76,117,1) 0%, rgba(50,130,184,1) 35%); */
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  opacity: 0.95;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.logout{
+  font-family: "Times New Roman", Times, serif;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* headers */
+.headers{
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.headers .header {
+  height: 70%;
+  width: 30%;
+  align-self: center;
+  background-color: white;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+.headers .header .counter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.headers .header .counter .text h3, h4{
+  font-size: 2.4rem;
+}
+
+/* form */
+
+.task2add {
+  width: 50%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 15px;
+  opacity: 0.9;
+}
+
+.task2add .input-group{
+  border-radius: 15px;
+  margin: 0 !important;
+}
+.task2add .input-group .form-control{
+  border: none;
+  margin: auto;
+}
+
+.task2add .input-group.title {
+  margin: 0;
+  align-self: center;
+}
+.task2add .input-group.description{
+  display: none;
+}
+
+.title, .description, .btn-add{
+  font-family: "Times New Roman", Times, serif;
+}
+
+.btn-add {
+  width: 100%;
+  border: none;
+  color: white;
+  background-color: rgba(15,76,117,1);
+  border-radius: 5px;
+}
+
+/* Task List */
+.task-section .text {
+  text-align: center;
+  margin: 40px;
+  color: white;
+}
+
+.task-list {
+  margin: auto;
+  color: white;
+  font-size: 30px;
+}
+.task-list ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.task-list ul li {
+  margin: 20px 100px;
+  cursor: pointer;
+}
+
+.task-list .completed-task{
+  display: none;
+  text-decoration: 3px line-through;
+}
+.task-list .completed-task .task-title{
+  color: #C8C8C8;
+}
+
+.popup{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0,0,0,.30);
+  background: #fff;
+  display: none;
+  opacity: 1;
+  transition: 0.5s;
+  color: black;
+}
+
+.popup h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+.popup h6 {
+  color: lightgrey;
+}
+.popup .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.popup .buttons .popup-btn {
+  padding:0 20px;
+  margin: 0 20px;
+  color: white;
+  background-color: #3282b8;
+  border-color: #3282b8;
+}
+
+.popup .buttons .popup-btn:hover, .popup-btn:focus, .popup-btn:active {
+  background-color: #0f4c75;
+  border-color: #0f4c75;
+}
+
+/* media */
+@media screen and (max-width:900px){
+  body{
+    height: auto;
+    font-family: 'Sansita Swashed', cursive;
+  }
+  header{
+    margin-bottom: 20px;
+  }
+  .headers{
+    height: 30%;
+    margin-bottom: 50px;
+  }
+
+  .headers .header {
+    height: 80%;
+    width: 35%;
+  }
+  .headers .header .counter .text h3, h4{
+    font-size: 1.5rem;
+  }
+
+  .task2add {
+    width: 85%;
+  }
+
+  .task-section .text {
+    margin: 40px;
+    margin-bottom: 20px;
+  }
+
+  .task-list {
+    font-size: 25px;
+  }
+  .task-list ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .task-list ul li {
+    margin: 20px 0;
+    cursor: pointer;
+    align-self: center;
+  }
+
+  .task-list ul li .task-title {
+    font-size: 28px;
+  }
+
+  .popup{
+    width: 300px;
+  }
+
+  .popup h2 {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .popup h6 {
+    font-size: 20px;
+    color: lightgrey;
+  }
+  .popup .buttons {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .popup .buttons .popup-btn {
+    width: 100%;
+    padding:0;
+    margin: 5px 0;
+  }
+}

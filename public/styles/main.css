@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+ background: linear-gradient(180deg, rgba(15,76,117,1) 0%, rgba(50,130,184,1) 40%);
+ height: 100vh;
+}
+
+.text {
+  font-weight: 300;
+  font-size: 40px;
+}
+/* header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 20vh;
+  /* background-color: #0f4c75; */
+}
+
+header .header-container{
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  align-self: center;
+}
+
+header .header-container h1 {
+  align-self: center;
+  font-size: 50px;
+  font-family: 'Sansita Swashed', cursive;
+  font-weight: 500;
+  margin: 0 20px;
+}
+header .header-container img {
+  align-self: center;
+}
+/* main */
+.error {
+  color: red;
+  text-align: center; 
+}
+.main-site{
+  width: 90%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  margin: 0 auto;
+}
+
+.main-site .form-class {
+  width: 40%;
+  height: 50%;
+  margin: auto ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 30px;
+  opacity: 0.9;
+}
+
+.main-site .form-class .input-group{
+  width: 90%;
+  margin: 0 auto;
+}
+.main-site .form-class .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+.main-site .form-class .buttons button{
+  width: 40%;
+}
+
+.btn {
+  background-color: #3282b8;
+  border-color: #3282b8;
+}
+.btn:hover, .btn:focus, .btn:active {
+  background-color: #0f4c75;
+  border-color: #0f4c75;
+}
+
+/* info */
+
+.info {
+  width: 40%;
+  height: 50%;
+  margin: auto;
+  /* text-align: center; */
+}
+
+.info .list {
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+.info .list ul {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.info .list ul li {
+  font-size: 30px;
+  font-family: 'Sansita Swashed', cursive;
+  font-weight: 300;
+  color: white;
+}
+
+/* media */
+@media screen and (max-width: 900px){
+
+  .main-site {
+    height: 80%;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+  .main-site .form-class {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .main-site .form-class .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-site .form-class .buttons .btn{
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .info {
+    width: 90%;
+  }
+  .info .list {
+    margin-left: 30px;
+    justify-content: space-between;
+  }
+  .info .list ul li{
+    font-size: 27px;
+  }
+}
